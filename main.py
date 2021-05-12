@@ -36,10 +36,9 @@ lb_otchestvo = Label(tab1, text='3. Введите Ваше отчество:')
 lb_otchestvo.pack()
 
 otchestvo = Entry(tab1, width=20)
-# otchestvo.grid(column=0, row=5)
 otchestvo.pack()
 
-lb_result = Label(tab1, width=20)
+lb_result = Label(tab1, width=50)
 lb_result.pack()
 
 
