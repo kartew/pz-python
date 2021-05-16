@@ -9,7 +9,7 @@ def work():
     positions = []
     for i in range(3):
         position = input(f'Введите должность #{i + 1}: ')
-        if position == '0' or position == 'return':
+        if position in ('0', 'return'):
             break
         else:
             positions.append(position)
@@ -21,7 +21,7 @@ def experience_skill():
     i = 1
     while True:
         experience = input(f'Введите Ваш опыт #{i}: ')
-        if experience == '0' or experience == 'return':
+        if experience in ('0', 'return'):
             break
         else:
             exp_dict[f'Exp{i}'] = experience
@@ -31,7 +31,7 @@ def experience_skill():
     i = 1
     while True:
         skill = input(f'Введите Вашу способность #{i}: ')
-        if skill == '0' or skill == 'return':
+        if skill in ('0', 'return'):
             break
         else:
             skill_dict[f'Skill_{i}'] = skill
