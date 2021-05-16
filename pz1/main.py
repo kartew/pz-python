@@ -11,8 +11,7 @@ def work():
         position = input(f'Введите должность #{i + 1}: ')
         if position in ('0', 'return'):
             break
-        else:
-            positions.append(position)
+        positions.append(position)
     return positions
 
 
@@ -23,8 +22,7 @@ def experience_skill():
         experience = input(f'Введите Ваш опыт #{i}: ')
         if experience in ('0', 'return'):
             break
-        else:
-            exp_dict[f'Exp{i}'] = experience
+        exp_dict[f'Exp{i}'] = experience
         i += 1
 
     skill_dict = {}
@@ -33,8 +31,7 @@ def experience_skill():
         skill = input(f'Введите Вашу способность #{i}: ')
         if skill in ('0', 'return'):
             break
-        else:
-            skill_dict[f'Skill_{i}'] = skill
+        skill_dict[f'Skill_{i}'] = skill
         i += 1
     return exp_dict, skill_dict
 
